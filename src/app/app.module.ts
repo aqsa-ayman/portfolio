@@ -1,21 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './common/navbar/navbar.component';
 import { LandingPageComponent } from './core/landing-page/landing-page.component';
+import { ProjectsComponent } from './core/projects/projects.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
-    CollapseModule
+    CollapseModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
