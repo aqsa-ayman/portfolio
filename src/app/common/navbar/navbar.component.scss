@@ -1,0 +1,40 @@
+@import '~scss/variables';
+
+h2 {
+  margin: none;
+}
+
+a {
+  color: $nav_items;
+}
+
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: $Fclaire;
+}
+
+.navbar {
+  opacity: .9;
+  background-color: $navbar;
+  
+  .navbar-brand {
+    margin-left: 10px;
+  }
+
+  .nav-item {
+    font-size: $fontSize;
+    text-align: center;
+  }
+
+  #nav-item-last {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 24px;
+  }
+}

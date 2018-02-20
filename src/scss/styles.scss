@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import './variables';
+@import './mixins';
+
+@font-face {
+  font-family: $Fclaire;
+  src: url('/assets/fonts/ClaireHandBold.ttf') format('truetype'),
+}
+
+button:focus {
+  outline: none !important;
+}
