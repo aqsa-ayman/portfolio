@@ -1,5 +1,20 @@
 @import '~scss/variables';
 
+:host {
+  z-index: 5;
+}
+
+.navbar {
+  width: 100vw;
+}
+
+.highlight {
+  background: black;
+  color: $navbar;
+  border-radius: 10px;
+  margin: 0px 10px;
+}
+
 h2 {
   margin: none;
 }

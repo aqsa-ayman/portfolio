@@ -1,7 +1,12 @@
+@import '~scss/mixins';
+
+:host {
+  z-index: -5;
+}
+
 .container-fluid {
   width: 100vw;
   height: 100vh;
-
   margin-top: 40px;
 }
 
@@ -14,6 +19,17 @@
   .card {
     background: pink;
     height: 200px;
+    overflow: hidden;
+
+    img {
+      @include filter(grayscale,100%);
+    }
+
+    img:hover {
+      @include filter(grayscale, 0);
+      cursor: pointer;
+    }
+
   }
 
 }
