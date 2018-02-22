@@ -6,3 +6,12 @@
   -o-filter: $filter-type+unquote('(#{$filter-amount})');
   filter: $filter-type+unquote('(#{$filter-amount})');
 }
+
+@mixin background($url) {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-image: url($url); 
+}
