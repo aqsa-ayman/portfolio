@@ -4,20 +4,15 @@
   position: fixed;
   top: 0;
   left: 0;
-}  
-
-#image {
-  @include background('/assets/landing_photo.jpg');
+  z-index: -5;
 }
 
-#credit_badge {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
+#image {
+  @include background('/assets/mountains.jpg');
 }
 
 @media only screen and (max-width: 768px) {
   #image {
-    @include background('/assets/landing_photo_768.jpg');
+    @include background('/assets/mountains_768.jpg');
   }
 }

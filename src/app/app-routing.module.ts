@@ -11,6 +11,7 @@ export const appRoutes = [
   { path: '', redirectTo: '/portfolio', pathMatch: 'full' },
   { path: 'portfolio', component: LandingPageComponent },
   { path: 'projects', loadChildren: 'app/core/projects/projects.module#ProjectsModule' },
+  // { path: 'projects', component: ProjectsComponent },
   { path: 'contact-me', component: ContactMeComponent }
   ]
 

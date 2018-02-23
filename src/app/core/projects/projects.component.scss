@@ -1,17 +1,22 @@
 @import '~scss/mixins';
 @import '~scss/variables';
 
-:host {
-  z-index: -5;
-}
-
 .container-fluid {
-  width: 100vw;
-  background: $projectsBg;
-  padding-top: 20px;
+  @include background('/assets/mountains.jpg');
+  height: 100%;
+  padding-top: 12vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .row {
+
+  margin: 0;
+  padding: 0;
 
   .col-12 {
     margin-top: 20px;
@@ -30,10 +35,6 @@
       width: 100%;
     }
 
-    // img {
-    //   // @include filter(grayscale,100%);
-    // }
-
     img:hover {
       @include filter(grayscale, 100%);
       cursor: pointer;
@@ -41,4 +42,10 @@
 
   }
 
+}
+
+@media only screen and (max-width: 768px) {
+  .container-fluid {
+    @include background('/assets/mountains_768.jpg');
+  }
 }

@@ -2,10 +2,7 @@
 
 :host {
   z-index: 5;
-}
-
-.navbar {
-  width: 100vw;
+  font-family: $Fclaire;
 }
 
 .highlight {
@@ -15,19 +12,8 @@
   margin: 10px 10px;
 }
 
-h2 {
-  margin: none;
-}
-
 a {
   color: $nav_items;
-}
-
-:host {
-  position: fixed;
-  top: 0;
-  left: 0;
-  font-family: $Fclaire;
 }
 
 .navbar {
@@ -35,16 +21,12 @@ a {
   background-color: $navbar;
   
   .navbar-brand {
-    margin-left: 10px;
+    padding-left: 10px;
   }
 
   .nav-item {
     font-size: $fontSize;
     text-align: center;
-  }
-
-  #nav-item-last {
-    margin-right: 10px;
   }
 }
 
@@ -54,6 +36,7 @@ a {
 
     h2 {
       margin: 0;
+      font-size: 22px;
     }
   }
 }
