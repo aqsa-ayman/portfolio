@@ -17,7 +17,7 @@ a {
 }
 
 .navbar {
-  opacity: .9;
+  opacity: .85;
   background-color: $navbar;
   
   .navbar-brand {
@@ -27,6 +27,10 @@ a {
   .nav-item {
     font-size: $fontSize;
     text-align: center;
+  }
+
+  #nav-item-last {
+    padding-right: 30px;
   }
 }
 
@@ -38,6 +42,14 @@ a {
       margin: 0;
       font-size: 22px;
     }
+  }
+
+  .nav-item {
+    font-size: 22px !important;
+  }
+
+  #nav-item-last {
+    padding-right: 0 !important;
   }
 }
 
