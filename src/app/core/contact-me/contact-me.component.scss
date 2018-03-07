@@ -15,35 +15,27 @@
   text-align: center;
 }
 
-.circle
-{
-     margin: auto;
-     margin-top: 30px;
-     width: 70vw;
-     background: $navbar;
-     opacity: .8;
-     border-radius: 10px;
-
-     .text {
-       padding: 20px;
-     }
-
-     h4 {
-       padding-top: 10px;
-     }
+slide {
+  padding: 55px;
+  background: $projectsBg;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 768px) {
   .container-fluid {
     @include background('/assets/mountains_768.jpg');
     margin: 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
   }
 
-  .circle {
-    margin: 0;
-    width: 100vw;
-    opacity: .7;
+  slide {
+    padding: 45px;
+    margin-top: 10vh;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row {
+    margin-top: 10vh;
   }
 }

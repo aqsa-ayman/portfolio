@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { ContactMeComponent } from './core/contact-me/contact-me.component';
   imports: [
     BrowserModule,
     CollapseModule,
+    CarouselModule.forRoot(),
     AppRoutingModule
   ],
   providers: [],
