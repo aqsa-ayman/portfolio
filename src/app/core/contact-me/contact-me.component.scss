@@ -11,6 +11,7 @@
   z-index: -1;
   overflow: scroll;
   overflow-x: hidden;
+  overflow-y: hidden;
   font-family: $Fclaire;
   text-align: center;
 }
@@ -19,6 +20,35 @@ slide {
   padding: 55px;
   background: $projectsBg;
   border-radius: 10px;
+}
+
+img {
+  max-height: 200px;
+}
+
+#one {
+  opacity: .5;
+  max-height: 180px;
+}
+
+#two {
+  opacity: .7;
+}
+
+#three {
+  opacity: .9;
+}
+
+#four {
+  opacity: .6;
+}
+
+#five {
+  opacity: .8;
+}
+
+#six {
+  opacity: .8;
 }
 
 @media only screen and (max-width: 768px) {
@@ -38,4 +68,19 @@ slide {
   .row {
     margin-top: 10vh;
   }
+
+  .fa-5x {
+    font-size: 8em;
+    opacity: .9;
+  }
+
+  // img {
+  //   width: 100%;
+  //   max-height: 100%;
+  //   opacity: .1;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: -1;
+  // }  
 }

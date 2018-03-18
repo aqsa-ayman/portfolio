@@ -1,4 +1,5 @@
 // used to filter grayscale in the project images
+// e.g. @include filter(grayscale, 100%);
 @mixin filter($filter-type,$filter-amount) { 
   -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
   -moz-filter: $filter-type+unquote('(#{$filter-amount})');
