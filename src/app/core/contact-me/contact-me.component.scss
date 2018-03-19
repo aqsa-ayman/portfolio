@@ -17,7 +17,7 @@
 }
 
 slide {
-  padding: 55px;
+  padding: 50px;
   background: $projectsBg;
   border-radius: 10px;
 }
@@ -60,20 +60,20 @@ img {
 
   slide {
     padding: 45px;
+    padding-top: 10px;
     margin-top: 10vh;
+  }
+
+  img {
+    max-width: 100%;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .row {
-    margin-top: 10vh;
+    margin-top: 5vh;
   }
-
-  .fa-5x {
-    font-size: 8em;
-    opacity: .9;
-  }
-
+  
   // img {
   //   width: 100%;
   //   max-height: 100%;
