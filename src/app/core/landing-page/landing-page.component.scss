@@ -8,11 +8,11 @@
 }
 
 #image {
-  @include background('/assets/mountains.jpg');
+  @include background('/assets/mountains_optimised.jpg');
 }
 
 @media only screen and (max-width: 768px) {
   #image {
-    @include background('/assets/mountains_768.jpg');
+    @include background('/assets/mountains_768_optimised.jpg');
   }
 }

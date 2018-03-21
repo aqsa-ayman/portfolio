@@ -2,7 +2,7 @@
 @import '~scss/variables';
 
 .container-fluid {
-  @include background('/assets/mountains.jpg');
+  @include background('/assets/mountains_optimised.jpg');
   height: 100%;
   padding-top: 12vh;
   position: absolute;
@@ -46,6 +46,6 @@
 
 @media only screen and (max-width: 768px) {
   .container-fluid {
-    @include background('/assets/mountains_768.jpg');
+    @include background('/assets/mountains_768_optimised.jpg');
   }
 }
