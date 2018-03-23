@@ -21,15 +21,11 @@ slide {
   background: $projectsBg;
   border-radius: 10px;
   margin-top: 5vh;
+  @include animation(fade-in ease-in-out 400ms);
 }
 
 img {
   max-height: 170px;
-}
-
-#one {
-  opacity: .5;
-  max-height: 180px;
 }
 
 #two {
@@ -50,6 +46,15 @@ img {
 
 #six {
   opacity: .8;
+}
+
+@include keyframes(fade-in) {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 768px) {

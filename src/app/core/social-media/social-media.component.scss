@@ -1,4 +1,5 @@
 @import '~scss/variables';
+@import '~scss/mixins';
 
 :host {
   z-index: 9999;
@@ -31,19 +32,21 @@ span {
 }
 
 .col-12:hover {
-  animation: push-left 1s;
+  @include animation(push-left 1s);
   animation-fill-mode: forwards;
 
   span {
     all: initial;
     font-family: $Fclaire, Verdana, sans-serif;
-    animation: show-span 1s;
+    @include animation(show-span 1s);
     animation-fill-mode: forwards;
     cursor: pointer;
   }
 }
 
-@keyframes push-left {
+// ----------- animations --------------
+
+@include keyframes(push-left) {
   from {
     padding-right: 0;
   } 
@@ -52,7 +55,7 @@ span {
   }
 }
 
-@keyframes show-span {
+@include keyframes(show-span) {
   from {
     opacity: 0;
   }
