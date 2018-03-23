@@ -20,10 +20,11 @@ slide {
   padding: 50px;
   background: $projectsBg;
   border-radius: 10px;
+  margin-top: 5vh;
 }
 
 img {
-  max-height: 200px;
+  max-height: 170px;
 }
 
 #one {
@@ -61,7 +62,7 @@ img {
   slide {
     padding: 45px;
     padding-top: 20px;
-    margin-top: 15vh;
+    margin-top: 20vh;
   }
 
   img {
@@ -74,14 +75,4 @@ img {
   .row {
     margin-top: 5vh;
   }
-  
-  // img {
-  //   width: 100%;
-  //   max-height: 100%;
-  //   opacity: .1;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: -1;
-  // }  
 }

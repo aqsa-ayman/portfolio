@@ -7,7 +7,7 @@
 
 .highlight {
   background: #383838;
-  color: $navbar;
+  color: white;
   border-radius: 10px;
   margin: 5px 10px;
 }
@@ -17,8 +17,7 @@ a {
 }
 
 .navbar {
-  opacity: .85;
-  background-color: $navbar;
+  background-color: white;
   
   .navbar-brand {
     padding-left: 10px;

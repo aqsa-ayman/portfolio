@@ -13,6 +13,6 @@
 
 @media only screen and (max-width: 768px) {
   #image {
-    @include background('/assets/mountains_768_optimised.jpg');
+    @include background('/assets/mountains_768.jpg');
   }
 }
