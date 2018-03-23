@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './common/navbar/navbar.component';
 import { LandingPageComponent } from './core/landing-page/landing-page.component';
 import { ContactMeComponent } from './core/contact-me/contact-me.component';
+import { SocialMediaComponent } from './core/social-media/social-media.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ContactMeComponent } from './core/contact-me/contact-me.component';
     NavbarComponent,
     LandingPageComponent,
     ContactMeComponent,
+    SocialMediaComponent,
   ],
   imports: [
     BrowserModule,

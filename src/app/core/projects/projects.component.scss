@@ -35,11 +35,6 @@
       width: 100%;
     }
 
-    img:hover {
-      @include filter(grayscale, 100%);
-      cursor: pointer;
-    }
-
   }
 
 }
@@ -47,5 +42,12 @@
 @media only screen and (max-width: 768px) {
   .container-fluid {
     @include background('/assets/mountains_768_optimised.jpg');
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  img:hover {
+    @include filter(grayscale, 100%);
+    cursor: pointer;
   }
 }
