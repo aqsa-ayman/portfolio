@@ -31,19 +31,6 @@ span {
   font-size: 22px;
 }
 
-.col-12:hover {
-  @include animation(push-left 1s);
-  animation-fill-mode: forwards;
-
-  span {
-    all: initial;
-    font-family: $Fclaire, Verdana, sans-serif;
-    @include animation(show-span 1s);
-    animation-fill-mode: forwards;
-    cursor: pointer;
-  }
-}
-
 // ----------- animations --------------
 
 @include keyframes(push-left) {
@@ -67,5 +54,20 @@ span {
 @media only screen and (max-width: 426px) {
   .col-12 {
     font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col-12:hover {
+    @include animation(push-left 1s);
+    animation-fill-mode: forwards;
+  
+    span {
+      all: initial;
+      font-family: $Fclaire, Verdana, sans-serif;
+      @include animation(show-span 1s);
+      animation-fill-mode: forwards;
+      cursor: pointer;
+    }
   }
 }
